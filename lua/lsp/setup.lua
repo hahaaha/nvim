@@ -29,6 +29,7 @@ mason_lsp.setup({
     "tsserver",
     "volar",
     "prismals",
+    "clangd",
   },
   -- Whether servers that are set up (via lspconfig) should be automatically installed if they're not already installed.
   -- This setting has no relation with the `ensure_installed` setting.
@@ -125,6 +126,8 @@ lspconfig.vuels.setup({
   init_options = require("lsp.servers.vuels").init_options,
   on_attach = on_attach,
 })
+
+lspconfig.clangd.setup({})
 
 for _, server in ipairs({ "bashls", "emmet_ls", "graphql", "html", "volar", "prismals" }) do
   lspconfig[server].setup({
