@@ -1,5 +1,5 @@
 P = function(v)
-  print(vim.pretty_print(v))
+  print(vim.print(v))
   return v
 end
 
@@ -10,4 +10,8 @@ end
 R = function(name)
   RELOAD(name)
   return require(name)
+end
+
+GIT_CWD = function()
+  return vim.fn.systemlist("git rev-parse --show-toplevel")[1] .. "/"
 end
