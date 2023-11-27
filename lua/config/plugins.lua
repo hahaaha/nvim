@@ -553,6 +553,7 @@ return {
     event = "BufReadPre",
     main = "ibl",
     config = function()
+      -- require("ibl").setup()
       require("plugins.indent")
     end,
   },

@@ -25,7 +25,7 @@ mason_lsp.setup({
     "jsonls",
     "lua_ls",
     "prismals",
-    "tailwindcss"
+    "tailwindcss",
     "clangd",
   },
   -- Whether servers that are set up (via lspconfig) should be automatically installed if they're not already installed.
