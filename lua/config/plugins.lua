@@ -24,6 +24,23 @@ return {
       require("plugins.alpha")
     end,
   },
+  {
+    'stevearc/aerial.nvim',
+    -- Optional dependencies
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "nvim-tree/nvim-web-devicons"
+    },
+    init = function()
+      require("aerial").setup({
+        layout = {
+          max_width = { 40, 0.4},
+          width = nil,
+          min_width= 10,
+        }
+      })
+    end,
+  },
 
   -- Treesitter
   {
