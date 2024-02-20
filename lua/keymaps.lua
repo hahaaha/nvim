@@ -7,6 +7,7 @@ vim.keymap.set("n", "<leader>f", ":Telescope live_grep<cr>")
 
 -- bufferline
 vim.keymap.set("n", "<Tab>", ":BufferLineCycleNext<CR>")
+vim.keymap.set("n", "<leader><Tab>", ":BufferLineCyclePrev<CR>")
 
 vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(ev)
