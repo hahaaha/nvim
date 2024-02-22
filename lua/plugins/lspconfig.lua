@@ -6,5 +6,6 @@ return {
 		lspconfig["html"].setup({})
 		lspconfig["tsserver"].setup({})
 		lspconfig["hls"].setup({})
+		lspconfig["cssls"].setup({})
 	end,
 }
