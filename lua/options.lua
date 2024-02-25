@@ -28,3 +28,6 @@ local lspui_ok, lspui = pcall(require, "lspconfig.ui.windows")
 if not lspui_ok then
 	return
 end
+
+vim.opt.spell = true
+vim.opt.spelllang = { 'en_us' }
