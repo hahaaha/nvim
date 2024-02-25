@@ -15,3 +15,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 		vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
 	end,
 })
+
+-- lspsaga
+-- diagnostic
+vim.keymap.set("n", "[e", "<cmd>Lspsaga diagnostic_jump_next<CR>")
