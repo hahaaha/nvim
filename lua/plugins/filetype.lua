@@ -1,4 +1,10 @@
 return {
 	"nathom/filetype.nvim",
-	opt = {},
+	opts = {
+		overrides = {
+			extensions = {
+				sh = "bash",
+			},
+		},
+	},
 }

@@ -1,7 +1,5 @@
-local mason = require('mason')
+local mason = require("mason")
 
 mason.setup()
 
-require("mason-lspconfig").setup({
-})
-
+require("mason-lspconfig").setup({})

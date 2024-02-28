@@ -7,5 +7,7 @@ return {
 		lspconfig["tsserver"].setup({})
 		lspconfig["hls"].setup({})
 		lspconfig["cssls"].setup({})
+		lspconfig["jsonls"].setup({})
+		lspconfig["bashls"].setup({})
 	end,
 }
