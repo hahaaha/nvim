@@ -1,13 +1,13 @@
 local silent = { silent = true }
 -- local builtin = require('telescope.builtin')
-vim.keymap.set("n", "<A-e>", ":NvimTreeToggle<CR>")
-vim.keymap.set("n", "<C-p>", ":Telescope find_files<cr>")
-vim.keymap.set("n", "<leader>f", ":Telescope live_grep<cr>")
+vim.keymap.set("n", "<A-e>", "<cmd>NvimTreeToggle<CR>")
+vim.keymap.set("n", "<C-p>", "<cmd>Telescope find_files<cr>")
+vim.keymap.set("n", "<leader>f", "<cmd>Telescope live_grep<cr>")
 -- vim.keymap.set('n', '<C-p>', builtin.find_files, silent)
 
 -- bufferline
-vim.keymap.set("n", "<Tab>", ":BufferLineCycleNext<CR>")
-vim.keymap.set("n", "<leader><Tab>", ":BufferLineCyclePrev<CR>")
+vim.keymap.set("n", "<Tab>", "<cmd>BufferLineCycleNext<CR>")
+vim.keymap.set("n", "<leader><Tab>", "<cmd>BufferLineCyclePrev<CR>")
 
 vim.api.nvim_create_autocmd("LspAttach", {
 	callback = function(ev)
@@ -18,4 +18,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 -- lspsaga
 -- diagnostic
-vim.keymap.set("n", "[e", "<cmd>Lspsaga diagnostic_jump_next<CR>")
+vim.keymap.set("n", "[lspj", "<cmd>Lspsaga diagnostic_jump_next<CR>")
+vim.keymap.set("n", "[lspk", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
+vim.keymap.set("n", "gpd", "<cmd>Lspsaga peek_definition<CR>")
