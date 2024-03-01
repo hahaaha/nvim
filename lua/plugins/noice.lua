@@ -2,7 +2,7 @@ return {
 	"folke/noice.nvim",
 	event = "VeryLazy",
 	opts = {
-		messages = { enabled = false },
+		messages = { view = "mini" },
 		lsp = {
 			-- override markdown rendering so that **cmp** and other plugins use **Treesitter**
 			override = {
@@ -11,7 +11,7 @@ return {
 				["cmp.entry.get_documentation"] = true, -- requires hrsh7th/nvim-cmp
 			},
 			signature = {
-				enabled = false,
+				-- enabled = false,
 			},
 		},
 	},
