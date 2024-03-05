@@ -1,14 +1,14 @@
 -- tab
 vim.opt.tabstop = 4 -- number of visual spaces per TAB
-vim.opt.softtabstop = 4 -- number of spacesin tab when editing
 vim.opt.shiftwidth = 4 -- insert 4 spaces on a tab
+vim.opt.softtabstop = 4 -- number of spacesin tab when editing
 vim.opt.expandtab = true
 vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.foldlevelstart = 99
 -- 不可见字符
 vim.o.list = true
-vim.o.listchars = "space:·,eol:$"
+vim.o.listchars = "tab:>~,space:·,eol:$"
 vim.opt.fileformat = "unix"
 local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
