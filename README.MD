@@ -1,7 +1,3 @@
-### plugin list
-- lualine
-- 
-
-### shortcut
-- toggleterm
-2<C-\> 
+### problem
+- Buffer close 
+- positive stop noice dialog

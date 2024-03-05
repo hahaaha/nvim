@@ -6,7 +6,10 @@ vim.opt.expandtab = true
 vim.opt.relativenumber = true
 vim.opt.number = true
 vim.opt.foldlevelstart = 99
-
+-- 不可见字符
+vim.o.list = true
+vim.o.listchars = "space:·,eol:$"
+vim.opt.fileformat = "unix"
 local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
 augroup("__formatter__", { clear = true })
