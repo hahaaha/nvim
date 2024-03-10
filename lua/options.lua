@@ -10,13 +10,22 @@ vim.opt.foldlevelstart = 99
 vim.o.list = true
 vim.o.listchars = "tab:>~,space:·,eol:↓"
 vim.opt.fileformat = "unix"
+-- mouse
+vim.opt.mouse = ""
+
 local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
-augroup("__formatter__", { clear = true })
-autocmd("BufWritePost", {
-    group = "__formatter__",
-    command = ":FormatWrite",
-})
+-- autocmd("bufWritePre", {
+--     pattern = "*",
+--     callback = function(args)
+--         require("conform").format({ bufnr = args.buf })
+--     end,
+-- })
+-- augroup("__formatter__", { clear = true })
+-- autocmd("BufWritePost", {
+--     group = "__formatter__",
+--     command = ":FormatWrite",
+-- })
 
 -- UI
 

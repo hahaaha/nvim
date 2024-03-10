@@ -10,14 +10,16 @@ vim.keymap.set("n", "<Tab>", "<cmd>BufferLineCycleNext<CR>")
 vim.keymap.set("n", "<leader><Tab>", "<cmd>BufferLineCyclePrev<CR>")
 
 vim.api.nvim_create_autocmd("LspAttach", {
-	callback = function(ev)
-		local opts = { buffer = ev.buf }
-		vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-	end,
+    callback = function(ev)
+        local opts = { buffer = ev.buf }
+        vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+    end,
 })
 
 -- lspsaga
 -- diagnostic
-vim.keymap.set("n", "[lspj", "<cmd>Lspsaga diagnostic_jump_next<CR>")
+vim.keymap.set("n", "[n", "<cmd>Lspsaga diagnostic_jump_next<CR>")
 vim.keymap.set("n", "[lspk", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
 vim.keymap.set("n", "gpd", "<cmd>Lspsaga peek_definition<CR>")
+-- code action
+vim.keymap.set("n", "[e", "<cmd>Lspsaga code_action<CR>")
