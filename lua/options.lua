@@ -13,6 +13,9 @@ vim.opt.fileformat = "unix"
 -- mouse
 vim.opt.mouse = ""
 
+vim.o.scrolloff = 8
+vim.o.sidescrolloff = 8
+
 local augroup = vim.api.nvim_create_augroup
 local autocmd = vim.api.nvim_create_autocmd
 -- autocmd("bufWritePre", {

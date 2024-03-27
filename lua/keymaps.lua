@@ -23,3 +23,4 @@ vim.keymap.set("n", "[lspk", "<cmd>Lspsaga diagnostic_jump_prev<CR>")
 vim.keymap.set("n", "gpd", "<cmd>Lspsaga peek_definition<CR>")
 -- code action
 vim.keymap.set("n", "[e", "<cmd>Lspsaga code_action<CR>")
+vim.keymap.set("n", "[r", "<cmd>Lspsaga finder<CR>")
