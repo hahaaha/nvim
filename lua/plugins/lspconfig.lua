@@ -21,7 +21,7 @@ return {
         lspconfig["cssls"].setup({
             capabilities = capabilities,
         })
-
+        lspconfig["tailwindcss"].setup({})
         lspconfig["jsonls"].setup({})
         lspconfig["bashls"].setup({})
         lspconfig["cssmodules_ls"].setup({})

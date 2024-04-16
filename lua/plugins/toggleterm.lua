@@ -5,6 +5,7 @@ return {
         opts = {
             open_mapping = [[<c-\>]],
             direction = "float",
+            hide_numbers = false,
             float_opts = {
 
             },
