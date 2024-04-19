@@ -31,9 +31,9 @@ return {
     dependencies = {
         "kevinhwang91/promise-async",
     },
-    opts = {
-        close_fold_kinds = { 'imports', 'comment' },
-        fold_virt_text_handler = handler
-
-    },
+    config = function()
+        require('ufo').setup({
+            fold_virt_text_handler = handler
+        })
+    end,
 }

@@ -16,20 +16,6 @@ vim.opt.mouse = ""
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
 
-local augroup = vim.api.nvim_create_augroup
-local autocmd = vim.api.nvim_create_autocmd
--- autocmd("bufWritePre", {
---     pattern = "*",
---     callback = function(args)
---         require("conform").format({ bufnr = args.buf })
---     end,
--- })
--- augroup("__formatter__", { clear = true })
--- autocmd("BufWritePost", {
---     group = "__formatter__",
---     command = ":FormatWrite",
--- })
-
 -- UI
 
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
