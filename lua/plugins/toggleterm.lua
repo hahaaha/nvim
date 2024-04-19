@@ -7,16 +7,18 @@ return {
             direction = "float",
             hide_numbers = false,
             float_opts = {
-                border = 'curved',
             },
             on_open = function()
-                vim.cmd('echo "enabled mouse"')
-                vim.o.mouse = "a"
+                -- vim.cmd('echo "enabled mouse"')
+                -- vim.o.mouse = "a"
             end,
             on_close = function()
-                vim.cmd('echo "disabled mouse"')
-                vim.o.mouse = ""
+                -- vim.cmd('echo "disabled mouse"')
+                -- vim.o.mouse = ""
             end,
+            winbar = {
+                enabled = true,
+            },
         }
     }
 }
