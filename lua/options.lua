@@ -8,7 +8,7 @@ vim.opt.number = true
 vim.opt.foldlevelstart = 99
 -- 不可见字符
 vim.o.list = true
-vim.o.listchars = "tab:>~,space:·,eol:↓"
+vim.o.listchars = "tab:>~,space:·"
 vim.opt.fileformat = "unix"
 -- mouse
 vim.opt.mouse = ""

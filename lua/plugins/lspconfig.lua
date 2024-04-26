@@ -26,5 +26,6 @@ return {
         lspconfig["bashls"].setup({})
         lspconfig["cssmodules_ls"].setup({})
         lspconfig["clangd"].setup({})
+        lspconfig["prismals"].setup({})
     end,
 }
