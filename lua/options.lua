@@ -13,6 +13,10 @@ vim.opt.fileformat = "unix"
 -- mouse
 vim.opt.mouse = ""
 
+-- 在最后一行的时候自动滚动
+vim.o.scrolloff = 8
+vim.o.sidescrolloff = 8
+
 -- UI
 
 local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
