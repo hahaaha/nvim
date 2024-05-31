@@ -28,3 +28,11 @@ vim.keymap.set("n", "got", "<cmd>Lspsaga goto_type_definition<CR>")
 -- code action
 vim.keymap.set("n", "[e", "<cmd>Lspsaga code_action<CR>")
 vim.keymap.set("n", "[r", "<cmd>Lspsaga finder<CR>")
+
+-- trouble
+vim.keymap.set("n", "<leader>xx", "<cmd>TroubleToggle<cr>")
+
+-- icn-rename
+vim.keymap.set("n", "<leader>rn", function()
+    return ":IncRename " .. vim.fn.expand("<cword>")
+end, { expr = true })

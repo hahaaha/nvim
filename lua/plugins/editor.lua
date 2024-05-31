@@ -1,0 +1,119 @@
+return {
+    {
+        'stevearc/dressing.nvim',
+        opts = {},
+    },
+    {
+        "nvim-tree/nvim-tree.lua",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        config = function()
+            require("nvim-tree").setup({
+                hijack_cursor = true,
+
+                update_focused_file = {
+                    enable = true,
+                    update_cwd = true,
+                    ignore_list = {}
+                },
+                filters = {
+                    dotfiles = false,
+                    git_ignored = false,
+                    -- custom = { '.git' }
+                },
+                view = {
+                    relativenumber = true,
+                    number = true,
+                },
+                renderer = {
+                    indent_markers = {
+                        enable = true,
+                    },
+                },
+                diagnostics = {
+                    enable = true,
+                },
+            })
+        end,
+    },
+    {
+        "smjonas/inc-rename.nvim",
+        config = function()
+            require("inc_rename").setup()
+        end,
+    },
+    {
+        "gen740/SmoothCursor.nvim",
+        config = function()
+            require("smoothcursor").setup()
+        end,
+    },
+    {
+        "nvim-telescope/telescope.nvim",
+        tag = "0.1.5",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        opts = {
+            pickers = {
+                find_files = {
+                    -- theme = "dropdown",
+                },
+            },
+        },
+    },
+    {
+        {
+            'akinsho/toggleterm.nvim',
+            version = "*",
+            opts = {
+                open_mapping = [[<c-\>]],
+                direction = "float",
+                hide_numbers = false,
+                float_opts = {
+                },
+                on_open = function()
+                    vim.cmd('echo "enabled mouse"')
+                    vim.o.mouse = "a"
+                end,
+                on_close = function()
+                    vim.cmd('echo "disabled mouse"')
+                    vim.o.mouse = ""
+                end,
+                winbar = {
+                    enabled = true,
+                },
+            }
+        }
+    },
+    {
+        "folke/noice.nvim",
+        event = "VeryLazy",
+        opts = {
+            messages = { view = "mini" },
+            lsp = {
+                -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
+                override = {
+                    ["vim.lsp.util.convert_input_to_markdown_lines"] = true,
+                    ["vim.lsp.util.stylize_markdown"] = true,
+                    ["cmp.entry.get_documentation"] = true, -- requires hrsh7th/nvim-cmp
+                },
+                signature = {
+                    -- enabled = false,
+                },
+                presets = {
+                    bottom_search = true,         -- use a classic bottom cmdline for search
+                    command_palette = true,       -- position the cmdline and popupmenu together
+                    long_message_to_split = true, -- long messages will be sent to a split
+                    inc_rename = false,           -- enables an input dialog for inc-rename.nvim
+                    lsp_doc_border = false,       --
+                }
+            },
+        },
+        dependencies = {
+            -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+            "MunifTanjim/nui.nvim",
+            -- OPTIONAL:
+            --   `nvim-notify` is only needed, if you want to use the notification view.
+            --   If not available, we use `mini` as the fallback
+            "rcarriga/nvim-notify",
+        },
+    }
+}
