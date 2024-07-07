@@ -1,5 +1,13 @@
 return {
     {
+        "mvllow/modes.nvim",
+        config = function()
+            require("modes").setup({
+                line_opacity = 0.3,
+            })
+        end,
+    },
+    {
         'stevearc/dressing.nvim',
         opts = {},
     },
@@ -115,5 +123,21 @@ return {
             --   If not available, we use `mini` as the fallback
             "rcarriga/nvim-notify",
         },
+    },
+    {
+        "karb94/neoscroll.nvim",
+        config = function()
+            require('neoscroll').setup {}
+        end
+    },
+    {
+        "folke/trouble.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        opts = {
+            -- your configuration comes here
+            -- or leave it empty to use the default settings
+            -- refer to the configuration section below
+        },
     }
+
 }
