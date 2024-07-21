@@ -27,5 +27,7 @@ return {
         lspconfig["cssmodules_ls"].setup({})
         lspconfig["clangd"].setup({})
         lspconfig["prismals"].setup({})
+        lspconfig["rust_analyzer"].setup({})
+        lspconfig["vuels"].setup({})
     end,
 }
