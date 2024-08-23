@@ -1,4 +1,5 @@
 local silent = { silent = true }
+vim.g.mapleader = " "
 -- local builtin = require('telescope.builtin')
 vim.keymap.set("n", "<A-e>", "<cmd>NvimTreeToggle<CR>")
 vim.keymap.set("n", "<C-p>", "<cmd>Telescope find_files<cr>")
@@ -16,6 +17,13 @@ vim.keymap.set("n", "<leader><Tab>", "<cmd>BufferLineCyclePrev<CR>")
 --         vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
 --     end,
 -- })
+--
+
+-- copy
+vim.keymap.set("n", "<leader>y", '"+y')
+vim.keymap.set("n", "<leader>p", '"+p')
+vim.keymap.set("v", "<leader>y", '"+y')
+vim.keymap.set("v", "<leader>p", '"+p')
 
 -- lspsaga
 -- diagnostic

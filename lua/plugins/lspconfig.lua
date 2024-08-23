@@ -29,5 +29,6 @@ return {
         lspconfig["prismals"].setup({})
         lspconfig["rust_analyzer"].setup({})
         lspconfig["vuels"].setup({})
+        -- lspconfig["volar"].setup({})
     end,
 }

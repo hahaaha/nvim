@@ -1,9 +1,12 @@
 return {
     "stevearc/conform.nvim",
     opts = {
-        lua = { "stylua" },
-        typescriptreact = { "prettier" },
-        typescript = { "prettier" },
+        formatters_by_ft = {
+            lua = { "stylua" },
+            typescriptreact = { "prettier" },
+            typescript = { "prettier" },
+            vue = { "prettier" },
+        },
         format_on_save = {
             -- These options will be passed to conform.format()
             timeout_ms = 500,
