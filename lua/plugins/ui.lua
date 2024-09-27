@@ -62,5 +62,11 @@ return {
         end,
         -- Optional: Lazy load Incline
         event = "VeryLazy",
+    },
+    {
+        "nvim-zh/colorful-winsep.nvim",
+        config = true,
+        event = { "WinLeave" },
     }
+
 }
