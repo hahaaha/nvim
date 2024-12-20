@@ -7,16 +7,16 @@ return {
             })
         end,
     },
-    {
-        "lukas-reineke/indent-blankline.nvim",
-        main = "ibl",
-        opts = {
-            indent = {
-                char = "|",
-            },
-            whitespace = {},
-        },
-    },
+    -- {
+    --     "lukas-reineke/indent-blankline.nvim",
+    --     main = "ibl",
+    --     opts = {
+    --         indent = {
+    --             char = "|",
+    --         },
+    --         whitespace = {},
+    --     },
+    -- },
     {
         "akinsho/bufferline.nvim",
         version = "*",

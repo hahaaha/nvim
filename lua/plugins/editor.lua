@@ -1,14 +1,14 @@
 return {
-    {
-        'nvimdev/dashboard-nvim',
-        event = 'VimEnter',
-        config = function()
-            require('dashboard').setup {
-                -- config
-            }
-        end,
-        dependencies = { { 'nvim-tree/nvim-web-devicons' } }
-    },
+    -- {
+    --     'nvimdev/dashboard-nvim',
+    --     event = 'VimEnter',
+    --     config = function()
+    --         require('dashboard').setup {
+    --             -- config
+    --         }
+    --     end,
+    --     dependencies = { { 'nvim-tree/nvim-web-devicons' } }
+    -- },
     {
         "mvllow/modes.nvim",
         config = function()
@@ -17,6 +17,7 @@ return {
             })
         end,
     },
+    { 'danilamihailov/beacon.nvim' },
     {
         'stevearc/dressing.nvim',
         opts = {},
@@ -59,12 +60,12 @@ return {
             require("inc_rename").setup()
         end,
     },
-    {
-        "gen740/SmoothCursor.nvim",
-        config = function()
-            require("smoothcursor").setup()
-        end,
-    },
+    -- {
+    --     "gen740/SmoothCursor.nvim",
+    --     config = function()
+    --         require("smoothcursor").setup()
+    --     end,
+    -- },
     {
         "nvim-telescope/telescope.nvim",
         tag = "0.1.5",
@@ -134,12 +135,12 @@ return {
             "rcarriga/nvim-notify",
         },
     },
-    {
-        "karb94/neoscroll.nvim",
-        config = function()
-            require('neoscroll').setup {}
-        end
-    },
+    -- {
+    --     "karb94/neoscroll.nvim",
+    --     config = function()
+    --         require('neoscroll').setup {}
+    --     end
+    -- },
     {
         "folke/trouble.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },

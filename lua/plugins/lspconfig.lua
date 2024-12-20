@@ -13,7 +13,7 @@ return {
             },
         })
         lspconfig["html"].setup({})
-        lspconfig["tsserver"].setup({})
+        lspconfig["ts_ls"].setup({})
         lspconfig["hls"].setup({})
 
         local capabilities = vim.lsp.protocol.make_client_capabilities()
