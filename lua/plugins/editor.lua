@@ -1,4 +1,13 @@
 return {
+    {
+        "rachartier/tiny-inline-diagnostic.nvim",
+        event = "VeryLazy", -- Or `LspAttach`
+        priority = 1000, -- needs to be loaded in first
+        config = function()
+            require('tiny-inline-diagnostic').setup()
+        end
+    },
+
     -- {
     --     'nvimdev/dashboard-nvim',
     --     event = 'VimEnter',
@@ -17,11 +26,15 @@ return {
             })
         end,
     },
-    { 'danilamihailov/beacon.nvim' },
+    -- { 'danilamihailov/beacon.nvim' },
     {
-        'stevearc/dressing.nvim',
+        "sphamba/smear-cursor.nvim",
         opts = {},
     },
+    -- {
+    --     'stevearc/dressing.nvim',
+    --     opts = {},
+    -- },
     {
         "nvim-tree/nvim-tree.lua",
         dependencies = { "nvim-tree/nvim-web-devicons" },

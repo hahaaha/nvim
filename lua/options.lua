@@ -21,6 +21,8 @@ vim.opt.mouse = ""
 -- 在最后一行的时候自动滚动
 vim.o.scrolloff = 8
 vim.o.sidescrolloff = 8
+-- sgin 区域长存
+vim.o.signcolumn = "yes"
 
 -- UI
 
