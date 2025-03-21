@@ -27,10 +27,10 @@ return {
         end,
     },
     -- { 'danilamihailov/beacon.nvim' },
-    {
-        "sphamba/smear-cursor.nvim",
-        opts = {},
-    },
+    -- {
+    --     "sphamba/smear-cursor.nvim",
+    --     opts = {},
+    -- },
     -- {
     --     'stevearc/dressing.nvim',
     --     opts = {},

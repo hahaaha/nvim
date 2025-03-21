@@ -3,7 +3,9 @@ vim.g.mapleader = " "
 -- local builtin = require('telescope.builtin')
 vim.keymap.set("n", "<leader>e", "<cmd>NvimTreeToggle<CR>")
 vim.keymap.set("n", "<A-e>", "<cmd>NvimTreeToggle<CR>")
-vim.keymap.set("n", "<C-p>", "<cmd>Telescope find_files<cr>")
+
+vim.keymap.set("n", "<C-p>", "<cmd>FzfLua files<cr>")
+-- vim.keymap.set("n", "<C-p>", "<cmd>Telescope find_files<cr>")
 vim.keymap.set("n", "<leader>f", "<cmd>Telescope live_grep<cr>")
 vim.keymap.set("n", "<leader>v", "<cmd>Telescope git_status<cr>")
 -- vim.keymap.set('n', '<C-p>', builtin.find_files, silent)
