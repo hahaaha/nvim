@@ -12,7 +12,7 @@ vim.keymap.set("n", "<leader>v", "<cmd>Telescope git_status<cr>")
 -- vim.keymap.set('n', '<C-p>', builtin.find_files, silent)
 
 -- bufferline
-vim.keymap.set("n", "<Tab>", "<cmd>BufferLineCycleNext<CR>")
+vim.keymap.set("n", "<Tab><Tab>", "<cmd>BufferLineCycleNext<CR>")
 vim.keymap.set("n", "<leader><Tab>", "<cmd>BufferLineCyclePrev<CR>")
 
 -- vim.api.nvim_create_autocmd("LspAttach", {

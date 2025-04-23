@@ -64,6 +64,7 @@ return {
                     -- custom = { '.git' }
                 },
                 view = {
+                    adaptive_size = true,
                     relativenumber = true,
                     number = true,
                 },
